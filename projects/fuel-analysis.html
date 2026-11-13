@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSW Fuel Price Analysis | Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 50px 8%;
+            background: #1e293b;
+        }
+
+        header a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 25px;
+        }
+
+        section {
+            margin-bottom: 45px;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .tag {
+            background: #334155;
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .dashboard {
+            background: #1e293b;
+            padding: 15px;
+            border-radius: 12px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 750px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #94a3b8;
+            background: #1e293b;
+        }
+
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            iframe {
+                height: 550px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="../index.html">← Back to Portfolio</a>
+
+    <h1>NSW Fuel Price Analysis & Prediction</h1>
+
+    <p class="subtitle">
+        Analysing a decade of NSW fuel prices using Python,
+        statistical modelling and Power BI.
+    </p>
+</header>
+
+<main>
+
+    <section>
+        <h2>Project Overview</h2>
+
+        <p>
+            This project investigates historical petrol prices across
+            New South Wales, using approximately ten years of fuel price
+            data to explore pricing trends, market cycles and the
+            relationship between fuel prices and broader economic factors.
+        </p>
+
+        <p>
+            The analysis combines historical E10 fuel prices with
+            economic indicators, including crude oil prices, exchange
+            rates, fuel excise and inflation, to investigate the factors
+            influencing retail petrol prices.
+        </p>
+    </section>
+
+    <section>
+        <h2>Objectives</h2>
+
+        <ul>
+            <li>Explore historical NSW E10 petrol price movements.</li>
+            <li>Identify recurring fuel price cycles and peak-to-trough patterns.</li>
+            <li>Investigate the relationship between crude oil prices and retail fuel prices.</li>
+            <li>Account for exchange rates, fuel excise and inflation.</li>
+            <li>Develop a statistical regression model to investigate fuel price behaviour.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Tools & Technologies</h2>
+
+        <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Statsmodels</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Regression Analysis</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Interactive Power BI Dashboard</h2>
+
+        <p>
+            Explore the interactive dashboard below to investigate
+            historical fuel prices, economic indicators and fuel
+            price patterns.
+        </p>
+
+        <div class="dashboard">
+            <iframe
+                title="Fuel_Exploration"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNTIwMDFhMmQtZmViZC00NGJlLWJmNjMtNTU4ZTc1MmY1MmQ4IiwidCI6ImFkMmUwMDZkLTI3NjItNGNjMC05Y2QzLTJmMDcxZTMxMmNkNyJ9"
+                allowFullScreen="true">
+            </iframe>
+        </div>
+    </section>
+
+    <section>
+        <h2>Statistical Modelling</h2>
+
+        <p>
+            The project also investigates the use of multiple linear
+            regression to explain daily fuel price movements.
+            The modelling process incorporates lagged fuel prices,
+            crude oil prices converted into Australian dollars,
+            daily fuel excise, inflation and a measure of time
+            since the previous fuel price peak.
+        </p>
+
+        <p>
+            Python is used for data preparation, exploratory analysis,
+            model estimation and residual diagnostics.
+        </p>
+    </section>
+
+    <a class="back-link" href="../index.html">
+        ← Return to Portfolio
+    </a>
+
+</main>
+
+<footer>
+    <p>Data Analytics Portfolio</p>
+</footer>
+
+</body>
+</html>
