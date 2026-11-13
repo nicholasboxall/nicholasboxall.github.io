@@ -47,4 +47,98 @@
             text-decoration: none;
         }
         .skills span {
-            display: inline
+            display: inline-block;
+            background: #26364d;
+            padding: 8px 13px;
+            margin: 5px;
+            border-radius: 6px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Data Analytics Portfolio</h1>
+    <p>Data Analytics | Python | Power BI | SQL | QGIS</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Welcome to my data analytics portfolio. This website showcases
+            projects involving data analysis, statistical modelling,
+            visualisation and geographic information systems.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects">
+
+            <div class="card">
+                <h3>NSW Fuel Price Analysis</h3>
+                <p>
+                    Analysis of approximately ten years of NSW fuel prices,
+                    investigating economic drivers and developing a predictive
+                    regression model.
+                </p>
+                <p><strong>Tools:</strong> Python, Pandas, Statsmodels, Power BI</p>
+                <a href="#">View Project →</a>
+            </div>
+
+            <div class="card">
+                <h3>Formula 1 Performance Analytics</h3>
+                <p>
+                    Analysis of Formula 1 race performance and telemetry,
+                    exploring driver pace, tyre strategies and vehicle data.
+                </p>
+                <p><strong>Tools:</strong> Python, FastF1, SQL, Power BI</p>
+                <a href="#">View Project →</a>
+            </div>
+
+            <div class="card">
+                <h3>NSW Road Safety Analysis</h3>
+                <p>
+                    Geographic analysis of road crashes across NSW,
+                    identifying accident hotspots and investigating
+                    road safety trends.
+                </p>
+                <p><strong>Tools:</strong> QGIS, Python, Power BI</p>
+                <a href="#">View Project →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Power BI</span>
+            <span>DAX</span>
+            <span>QGIS</span>
+            <span>Pandas</span>
+            <span>Statistical Modelling</span>
+            <span>Data Visualisation</span>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Data Analytics Portfolio</p>
+</footer>
+
+</body>
+</html>
