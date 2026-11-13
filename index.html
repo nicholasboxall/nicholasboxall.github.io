@@ -4,14 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Data Analytics Portfolio</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+        * { box-sizing: border-box; scroll-behavior: smooth; }
 
         body {
             margin: 0;
@@ -27,28 +23,15 @@
             text-align: center;
         }
 
-        header h1 {
-            font-size: 44px;
-            margin-bottom: 10px;
-        }
+        header h1 { font-size: 44px; margin-bottom: 10px; }
+        header p { color: #b8c5d6; font-size: 19px; }
 
-        header p {
-            color: #b8c5d6;
-            font-size: 19px;
-        }
-
-        nav {
-            margin-top: 25px;
-        }
+        nav { margin-top: 25px; }
 
         nav a {
             color: #7dd3fc;
             margin: 0 12px;
             text-decoration: none;
-        }
-
-        nav a:hover {
-            color: white;
         }
 
         main {
@@ -60,7 +43,6 @@
         h2 {
             color: #7dd3fc;
             margin-top: 45px;
-            margin-bottom: 20px;
         }
 
         .projects {
@@ -77,17 +59,10 @@
             transition: transform 0.2s;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
-        }
+        .card:hover { transform: translateY(-5px); }
 
-        .card h3 {
-            color: white;
-        }
-
-        .card p {
-            color: #cbd5e1;
-        }
+        .card h3 { color: white; }
+        .card p { color: #cbd5e1; }
 
         .card a {
             color: #7dd3fc;
@@ -95,9 +70,7 @@
             font-weight: bold;
         }
 
-        .card a:hover {
-            color: white;
-        }
+        .card a:hover { color: white; }
 
         .skills span {
             display: inline-block;
@@ -105,25 +78,6 @@
             padding: 9px 15px;
             margin: 5px;
             border-radius: 6px;
-        }
-
-        .dashboard {
-            margin-top: 45px;
-            background: #1e293b;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #334155;
-        }
-
-        .dashboard iframe {
-            width: 100%;
-            height: 750px;
-            border: none;
-            border-radius: 8px;
-        }
-
-        .dashboard p {
-            color: #cbd5e1;
         }
 
         footer {
@@ -135,22 +89,9 @@
         }
 
         @media (max-width: 600px) {
-            header {
-                padding: 55px 20px;
-            }
-
-            header h1 {
-                font-size: 32px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 6px;
-            }
-
-            .dashboard iframe {
-                height: 600px;
-            }
+            header { padding: 55px 20px; }
+            header h1 { font-size: 32px; }
+            nav a { display: inline-block; margin: 6px; }
         }
     </style>
 </head>
@@ -159,33 +100,24 @@
 
 <header>
     <h1>Data Analytics Portfolio</h1>
-
-    <p>
-        Data Analytics | Python | Power BI | SQL | QGIS
-    </p>
+    <p>Data Analytics | Python | Power BI | SQL | QGIS</p>
 
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#dashboard">Dashboard</a>
     </nav>
 </header>
 
-
 <main>
 
-    <!-- ABOUT SECTION -->
-
     <section id="about">
-
         <h2>About Me</h2>
 
         <p>
-            Welcome to my data analytics portfolio. This website
-            showcases projects involving data analysis, statistical
-            modelling, data visualisation and geographic information
-            systems.
+            Welcome to my data analytics portfolio. This website showcases
+            projects involving data analysis, statistical modelling,
+            data visualisation and geographic information systems.
         </p>
 
         <p>
@@ -193,102 +125,52 @@
             problems, identify patterns and communicate insights
             through interactive dashboards and analytical modelling.
         </p>
-
     </section>
 
-
-    <!-- PROJECTS SECTION -->
-
     <section id="projects">
-
         <h2>Featured Projects</h2>
 
         <div class="projects">
 
-            <!-- FUEL PROJECT -->
-
             <div class="card">
-
                 <h3>NSW Fuel Price Analysis</h3>
-
                 <p>
-                    Analysis of approximately ten years of NSW fuel
-                    prices, investigating economic drivers and developing
-                    a predictive regression model.
+                    Analysis of approximately ten years of NSW fuel prices,
+                    investigating economic drivers and developing a
+                    predictive regression model.
                 </p>
-
-                <p>
-                    <strong>Tools:</strong>
-                    Python, Pandas, Statsmodels, Power BI
-                </p>
-
-                <a href="projects/fuel-analysis.html">
-                    View Project →
-                </a>
-
+                <p><strong>Tools:</strong> Python, Pandas, Statsmodels, Power BI</p>
+                <a href="projects/fuel-analysis.html">View Project →</a>
             </div>
 
-
-            <!-- F1 PROJECT -->
-
             <div class="card">
-
                 <h3>Formula 1 Performance Analytics</h3>
-
                 <p>
-                    Analysis of Formula 1 race performance and
-                    telemetry, exploring driver pace, tyre strategies
-                    and vehicle data.
+                    Analysis of Formula 1 race performance and telemetry,
+                    exploring driver pace, tyre strategies and vehicle data.
                 </p>
-
-                <p>
-                    <strong>Tools:</strong>
-                    Python, FastF1, SQL, Power BI
-                </p>
-
-                <a href="projects/f1-analytics.html">
-                    View Project →
-                </a>
-
+                <p><strong>Tools:</strong> Python, FastF1, SQL, Power BI</p>
+                <a href="projects/f1-analytics.html">View Project →</a>
             </div>
 
-
-            <!-- ROAD SAFETY PROJECT -->
-
             <div class="card">
-
                 <h3>NSW Road Safety Analysis</h3>
-
                 <p>
                     Geographic analysis of road crashes across NSW,
                     identifying accident hotspots and investigating
                     road safety trends and injury severity.
                 </p>
-
-                <p>
-                    <strong>Tools:</strong>
-                    QGIS, Python, Power BI
-                </p>
-
-                <a href="projects/road-safety.html">
-                    View Project →
-                </a>
-
+                <p><strong>Tools:</strong> QGIS, Python, Power BI</p>
+                <a href="projects/road-safety.html">View Project →</a>
             </div>
 
         </div>
-
     </section>
 
-
-    <!-- SKILLS SECTION -->
-
     <section id="skills">
-
         <h2>Technical Skills</h2>
 
         <div class="skills">
-
             <span>Python</span>
             <span>SQL</span>
             <span>Power BI</span>
@@ -299,43 +181,13 @@
             <span>Data Visualisation</span>
             <span>Data Cleaning</span>
             <span>Geospatial Analysis</span>
-
         </div>
-
     </section>
-
-
-    <!-- ROAD SAFETY DASHBOARD -->
-
-    <section id="dashboard">
-
-        <div class="dashboard">
-
-            <h2>NSW Road Safety Dashboard</h2>
-
-            <p>
-                Explore the interactive Power BI dashboard
-                investigating road crashes across New South Wales.
-            </p>
-
-            <iframe
-                title="NSW Road Safety Dashboard"
-                src="https://app.powerbi.com/view?r=eyJrIjoiMDRiOTgyZTEtOGIzYy00N2QwLWIyMTMtMTVkYzhjNDAyNWJlIiwidCI6ImFkMmUwMDZkLTI3NjItNGNjMC05Y2QzLTJmMDcxZTMxMmNkNyJ9"
-                allowfullscreen="true">
-            </iframe>
-
-        </div>
-
-    </section>
-
 
 </main>
 
-
 <footer>
-
     <p>Data Analytics Portfolio</p>
-
 </footer>
 
 </body>
