@@ -83,9 +83,33 @@
     <div class="details">
 
         <h2>Project Overview</h2>
+
+        <p>
+            The complex plane differs from the standard Cartesian plane as it contains both real and imaginary axes.
+            A large subset of functions contain at least one complex value root and using purely real mathematics, 
+            they are impossible to find. In order to proceed, this project uses the formula for imaginary numbers denoted by,
+            <p>i<sup>2</sup> = −1</p>
+        </p>
         
         <p>
-            An application which uses Newton's Method to:
+            Newton's Method is an iterative numerical method which takes a certain value and function as an input
+            and attempts to estimate the roots of the function. It does so by drawing a tangent line at your starting point,
+            and outputting the point where that line intersects the y-axis. Then repeat the process as many times as you wish,
+            ideally until your next estimate doesn't differ from the last by a significant amount or tolerance. 
+        </p>
+
+        <p>
+            The formula for Newton's Method:
+            <div class="formula">
+                z<sub>n+1</sub> = z<sub>n</sub> −
+                <span class="fraction">
+                    <span>f(z<sub>n</sub>)</span>
+                    <span>f′(z<sub>n</sub>)</span>
+                </span>
+            </div>
+        </p>
+        <p>
+            In this project, I have designed an application which uses Newton's Method to:
         </p>
         
         <ul>
