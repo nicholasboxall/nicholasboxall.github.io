@@ -8,6 +8,19 @@
 
     <style>
         * { box-sizing: border-box; }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .tag {
+            background: #334155;
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
 
         body {
             margin: 0;
@@ -131,9 +144,8 @@
         </p>
 
     </div>
-
-    <section class="tools-section">
     
+    <section>
         <h2>Tools & Technologies</h2>
     
         <div class="tags">
@@ -141,7 +153,6 @@
             <span class="tag">Power BI</span>
             <span class="tag">QGIS Mapping Software</span>
         </div>
-    
     </section>
 
     <div class="dashboard">
@@ -163,23 +174,87 @@
     <!-- Project Image Section -->
     <section class="image-section">
 
-        <h2>Project Image</h2>
+        <h2>QGIS Screenshots</h2>
 
         <p>
-            Add an image showcasing another aspect of the project below.
+            A collection of screenshots from my work in QGIS.
         </p>
 
         <div class="image-container">
             <img
-                src="QGIS Screenshots/100m Radius.png"
-                alt="NSW Road Safety Analysis visualisation">
+                src="QGIS Screenshots/Severity.png"
+                alt="Severity">
+        </div>
+        
+        <div class="image-container">
+            <img
+                src="QGIS Screenshots/Local Severity.png"
+                alt="Local Severity">
         </div>
 
         <p class="image-description">
-            Add a description explaining the image, the analysis
-            undertaken or the findings demonstrated.
+            All crashes in the Sydney metro area. Colours represent injury severity.
         </p>
+        
+        <div class="image-container">
+            <img
+                src="QGIS Screenshots/Local Traffic Lights.png"
+                alt="Local Traffic Lights">
+        </div>
 
+        <p class="image-description">
+            All Traffic Lights in NSW.
+
+        <div class="image-container">
+            <img
+                src="QGIS Screenshots/Local Speed Zones.png"
+                alt="Local Speed Zones">
+        </div>
+
+        <p class="image-description">
+            All Roads by Speed Limit.
+        
+        <div class="image-container">
+            <img
+                src="QGIS Screenshots/100m Radius.png"
+                alt="100m Radius Clusters">
+        </div>
+
+        <div class="image-container">
+            <img
+                src="QGIS Screenshots/Local 100m Radius.png"
+                alt="Local 100m Radius Clusters">
+        </div>
+
+        <p class="image-description">
+            Clusters of crashes within 100m of each other. Size of dots is related to number
+            of crashes and the colour of the dots is related to average injury severity.
+        
+        <div class="image-container">
+            <img
+                src="QGIS Screenshots/DBSCAN 25m.png"
+                alt="DBSCAN Clusters">
+        </div>
+
+        <div class="image-container">
+            <img
+                src="QGIS Screenshots/Local DBSCAN 25m w Tooltips.png"
+                alt="Local DBSCAN Clusters">
+        </div>
+
+        <p class="image-description">
+            Clusters of crashes within 25m using the DBSCAN Clustering method.
+            Size of dots is related to number
+            of crashes and the colour of the dots is related to average injury severity.
+
+        <div class="image-container">
+            <img
+                src="QGIS Screenshots/Heatmap 250m.png"
+                alt="Heatmap 250m">
+        </div>
+
+        <p class="image-description">
+            Crash frequency heatmap with 250m radius.
     </section>
 
 </main>
