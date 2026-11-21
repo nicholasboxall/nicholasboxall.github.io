@@ -1,81 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NSW Road Safety Analysis</title>
+    <title>NSW Road Safety Analysis | Portfolio</title>
 
     <style>
-        * { box-sizing: border-box; }
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 50px 8%;
+            background: #1e293b;
+        }
+
+        header a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 25px;
+        }
+
+        section {
+            margin-bottom: 45px;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
         .tags {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             margin: 20px 0;
         }
-        
+
         .tag {
             background: #334155;
+            color: #38bdf8;
             padding: 7px 14px;
             border-radius: 20px;
             font-size: 0.9rem;
         }
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #101827;
-            color: #f1f5f9;
-            line-height: 1.6;
-        }
-
-        header {
-            background: #17243a;
-            padding: 25px 8%;
-        }
-
-        header a {
-            color: #7dd3fc;
-            text-decoration: none;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: auto;
-            padding: 35px 20px;
-        }
-
-        h1, h2 { color: #7dd3fc; }
-
-        .details, .dashboard, .image-section {
+        .dashboard {
             background: #1e293b;
-            padding: 25px;
+            padding: 15px;
             border-radius: 12px;
-            margin-top: 25px;
-        }
-
-        .tools-section {
-            background: #1e293b;
-            padding: 25px;
-            border-radius: 12px;
-            margin-top: 25px;
-        }
-        
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 15px;
-        }
-        
-        .tag {
-            background: #334155;
-            color: #7dd3fc;
-            padding: 7px 16px;
-            border-radius: 25px;
-            font-size: 14px;
-            border: 1px solid #475569;
         }
 
         .dashboard iframe {
@@ -85,7 +76,6 @@
             border-radius: 8px;
         }
 
-        /* Project Image */
         .image-container {
             width: 100%;
             margin-top: 20px;
@@ -106,6 +96,29 @@
             color: #cbd5e1;
         }
 
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #94a3b8;
+            background: #1e293b;
+        }
+
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .dashboard iframe {
+                height: 550px;
+            }
+        }
     </style>
 </head>
 
@@ -123,17 +136,17 @@
     </p>
 
     <p>
-    <a href="https://github.com/nicholasboxall/NSW_Road_Safety_Analysis"
-       target="_blank"
-       style="color: #38bdf8;">
-        View Source Code on GitHub →
-    </a>
+        <a href="https://github.com/nicholasboxall/NSW_Road_Safety_Analysis"
+           target="_blank"
+           style="color: #38bdf8;">
+            View Source Code on GitHub →
+        </a>
     </p>
 </header>
 
 <main>
 
-    <div class="details">
+    <section>
 
         <h2>Project Overview</h2>
 
@@ -143,11 +156,11 @@
             and severity.
         </p>
 
-    </div>
-    
+    </section>
+
     <section>
         <h2>Tools & Technologies</h2>
-    
+
         <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">Power BI</span>
@@ -155,7 +168,7 @@
         </div>
     </section>
 
-    <div class="dashboard">
+    <section>
 
         <h2>Interactive Power BI Dashboard</h2>
 
@@ -163,16 +176,18 @@
             Explore the interactive report below.
         </p>
 
-        <iframe
-            title="NSW Road Safety Dashboard"
-            src="https://app.powerbi.com/view?r=eyJrIjoiMDRiOTgyZTEtOGIzYy00N2QwLWIyMTMtMTVkYzhjNDAyNWJlIiwidCI6ImFkMmUwMDZkLTI3NjItNGNjMC05Y2QzLTJmMDcxZTMxMmNkNyJ9"
-            allowfullscreen="true">
-        </iframe>
+        <div class="dashboard">
+            <iframe
+                title="NSW Road Safety Dashboard"
+                src="https://app.powerbi.com/view?r=eyJrIjoiMDRiOTgyZTEtOGIzYy00N2QwLWIyMTMtMTVkYzhjNDAyNWJlIiwidCI6ImFkMmUwMDZkLTI3NjItNGNjMC05Y2QzLTJmMDcxZTMxMmNkNyJ9"
+                allowfullscreen="true">
+            </iframe>
+        </div>
 
-    </div>
+    </section>
 
     <!-- Project Image Section -->
-    <section class="image-section">
+    <section>
 
         <h2>QGIS Screenshots</h2>
 
@@ -185,7 +200,7 @@
                 src="QGIS Screenshots/Severity.png"
                 alt="Severity">
         </div>
-        
+
         <div class="image-container">
             <img
                 src="QGIS Screenshots/Local Severity.png"
@@ -195,7 +210,7 @@
         <p class="image-description">
             All crashes in the Sydney metro area. Colours represent injury severity.
         </p> <br><br>
-        
+
         <div class="image-container">
             <img
                 src="QGIS Screenshots/Local Traffic Lights.png"
@@ -205,7 +220,7 @@
         <p class="image-description">
             All Traffic Lights in NSW.
         </p> <br><br>
-        
+
         <div class="image-container">
             <img
                 src="QGIS Screenshots/Local Speed Zones.png"
@@ -215,7 +230,7 @@
         <p class="image-description">
             All Roads by Speed Limit.
         </p> <br><br>
-        
+
         <div class="image-container">
             <img
                 src="QGIS Screenshots/100m Radius.png"
@@ -232,7 +247,7 @@
             Clusters of crashes within 100m of each other. Size of dots is related to number
             of crashes and the colour of the dots is related to average injury severity.
         </p> <br><br>
-        
+
         <div class="image-container">
             <img
                 src="QGIS Screenshots/DBSCAN 25m.png"
@@ -250,7 +265,7 @@
             Size of dots is related to number
             of crashes and the colour of the dots is related to average injury severity.
         </p> <br><br>
-        
+
         <div class="image-container">
             <img
                 src="QGIS Screenshots/Heatmap 250m.png"
@@ -260,6 +275,7 @@
         <p class="image-description">
             Crash frequency heatmap with 250m radius.
         </p> <br><br>
+
     </section>
 
     <a class="back-link" href="../index.html">
@@ -267,6 +283,10 @@
     </a>
 
 </main>
+
+<footer>
+    <p>Data Analytics Portfolio</p>
+</footer>
 
 </body>
 </html>
