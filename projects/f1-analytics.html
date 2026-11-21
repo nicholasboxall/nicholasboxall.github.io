@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formula 1 Performance Analytics</title>
+    <title>Formula 1 Performance Analytics | Portfolio</title>
 
     <style>
         * {
@@ -14,49 +13,89 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #101827;
-            color: #f1f5f9;
+            background: #0f172a;
+            color: #e2e8f0;
             line-height: 1.6;
         }
 
         header {
-            background: #17243a;
-            padding: 25px 8%;
+            padding: 50px 8%;
+            background: #1e293b;
         }
 
         header a {
-            color: #7dd3fc;
+            color: #38bdf8;
             text-decoration: none;
         }
 
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
         main {
-            max-width: 1300px;
+            max-width: 1200px;
             margin: auto;
-            padding: 35px 20px;
+            padding: 40px 25px;
         }
 
-        h1, h2 {
-            color: #7dd3fc;
+        section {
+            margin-bottom: 45px;
         }
 
-        .details, .dashboard {
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .tag {
+            background: #334155;
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .dashboard {
             background: #1e293b;
-            padding: 25px;
+            padding: 15px;
             border-radius: 12px;
-            margin-top: 25px;
-            border: 1px solid #334155;
         }
 
-        .dashboard iframe {
+        iframe {
             width: 100%;
-            height: 800px;
+            height: 750px;
             border: none;
             border-radius: 8px;
         }
 
-        @media (max-width: 600px) {
-            .dashboard iframe {
-                height: 600px;
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #94a3b8;
+            background: #1e293b;
+        }
+
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            iframe {
+                height: 550px;
             }
         }
     </style>
@@ -74,19 +113,19 @@
         investigating driver performance, lap times, tyre strategies
         and vehicle data.
     </p>
+
     <p>
-    <a href="https://github.com/nicholasboxall/formula-1-analysis"
-       target="_blank"
-       style="color: #38bdf8;">
-        View Source Code on GitHub →
-    </a>
-</p>
+        <a href="https://github.com/nicholasboxall/formula-1-analysis"
+           target="_blank"
+           style="color: #38bdf8;">
+            View Source Code on GitHub →
+        </a>
+    </p>
 </header>
 
 <main>
 
-    <div class="details">
-
+    <section>
         <h2>Project Overview</h2>
 
         <p>
@@ -95,57 +134,76 @@
             and explore underlying performance metrics that are not always visible during
             live broadcasts.
         </p>
-        
+
         <p>
             While much of this data and analysis is available through paid third-party
             platforms, I discovered the FastF1 Python package, which allowed me to access
             session data and develop my own analytical tools and interactive dashboards
             for a more detailed and personalised exploration of the sport.
         </p>
-        
+
         <p>
             <strong>Data access note:</strong> As of October 2026, accessing Formula 1
             session data through FastF1 requires an F1 TV Access subscription or higher.
         </p>
-        
-        <p>
-            <strong>Python visuals note:</strong> Unfortunately, python visuals are unable to be viewed in publish to web Power BI. 
-            If you wish to see the full working, please contact me and I can provide the original file.
-        </p>
-
-        <h2>Tools and Technologies</h2>
 
         <p>
-            For this project, I utilised FastF1 to extract Formula 1 session data and native Python to clean the data. After this, I
-            uploaded data to an SQL Server, where it can be accessed by Power BI and be quickly refreshed to include new data. 
+            <strong>Python visuals note:</strong> Unfortunately, Python visuals are unable
+            to be viewed in Power BI Publish to Web. If you wish to see the full working,
+            please contact me and I can provide the original file.
+        </p>
+    </section>
+
+    <section>
+        <h2>Tools & Technologies</h2>
+
+        <p>
+            For this project, I utilised FastF1 to extract Formula 1 session data and
+            Python to clean and process the information. The data was then uploaded
+            to an SQL Server, allowing it to be accessed by Power BI and refreshed
+            efficiently as new session data becomes available.
         </p>
 
         <p>
-            <strong>FastF1 --> Python --> SQL Server --> Power BI</strong>
+            **Data workflow:** FastF1 → Python → SQL Server → Power BI
         </p>
 
-    </div>
+        <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastF1</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Data Visualisation</span>
+            <span class="tag">Telemetry Analysis</span>
+        </div>
+    </section>
 
-    <div class="dashboard">
-
+    <section>
         <h2>Interactive F1 Dashboard</h2>
 
         <p>
             Explore the interactive Formula 1 performance dashboard below.
         </p>
 
-        <iframe
-            title="F1_Total_Exploration"
-            src="https://app.powerbi.com/view?r=eyJrIjoiYTQ4ZDQ2MDktZmQ4NS00NzNjLThiOWQtMmUzNWMxMTNjYWIyIiwidCI6ImFkMmUwMDZkLTI3NjItNGNjMC05Y2QzLTJmMDcxZTMxMmNkNyJ9"
-            allowfullscreen="true">
-        </iframe>
-
-    </div>
+        <div class="dashboard">
+            <iframe
+                title="F1_Total_Exploration"
+                src="https://app.powerbi.com/view?r=eyJrIjoiYTQ4ZDQ2MDktZmQ4NS00NzNjLThiOWQtMmUzNWMxMTNjYWIyIiwidCI6ImFkMmUwMDZkLTI3NjItNGNjMC05Y2QzLTJmMDcxZTMxMmNkNyJ9"
+                allowfullscreen="true">
+            </iframe>
+        </div>
+    </section>
 
     <a class="back-link" href="../index.html">
         ← Back to Portfolio
     </a>
+
 </main>
+
+<footer>
+    <p>Data Analytics Portfolio</p>
+</footer>
 
 </body>
 </html>
