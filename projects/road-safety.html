@@ -35,7 +35,7 @@
 
         h1, h2 { color: #7dd3fc; }
 
-        .details, .dashboard {
+        .details, .dashboard, .image-section {
             background: #1e293b;
             padding: 25px;
             border-radius: 12px;
@@ -48,6 +48,28 @@
             border: none;
             border-radius: 8px;
         }
+
+        /* Project Image */
+        .image-container {
+            width: 100%;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            display: block;
+            margin: auto;
+            border-radius: 8px;
+        }
+
+        .image-description {
+            margin-top: 20px;
+            color: #cbd5e1;
+        }
+
     </style>
 </head>
 
@@ -83,8 +105,8 @@
             This project combines Power BI, Python and QGIS to explore
             road crash trends and identify high-risk locations across NSW by both frequency
             and severity.
-        </p>        
-    
+        </p>
+
     </div>
 
     <section>
@@ -112,6 +134,28 @@
         </iframe>
 
     </div>
+
+    <!-- Project Image Section -->
+    <section class="image-section">
+
+        <h2>Project Image</h2>
+
+        <p>
+            Add an image showcasing another aspect of the project below.
+        </p>
+
+        <div class="image-container">
+            <img
+                src="images/your-image.png"
+                alt="NSW Road Safety Analysis visualisation">
+        </div>
+
+        <p class="image-description">
+            Add a description explaining the image, the analysis
+            undertaken or the findings demonstrated.
+        </p>
+
+    </section>
 
 </main>
 
