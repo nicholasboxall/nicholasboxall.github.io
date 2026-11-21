@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complex Newton's Method Fractals</title>
+    <title>Complex Newton's Method Fractals | Portfolio</title>
+
     <script>
         MathJax = {
             tex: {
@@ -23,49 +24,87 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #101827;
-            color: #f1f5f9;
+            background: #0f172a;
+            color: #e2e8f0;
             line-height: 1.6;
         }
 
         header {
-            background: #17243a;
-            padding: 25px 8%;
+            padding: 50px 8%;
+            background: #1e293b;
         }
 
         header a {
-            color: #7dd3fc;
+            color: #38bdf8;
             text-decoration: none;
         }
 
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
         main {
-            max-width: 1300px;
+            max-width: 1200px;
             margin: auto;
-            padding: 35px 20px;
+            padding: 40px 25px;
         }
 
-        h1, h2 {
-            color: #7dd3fc;
+        section {
+            margin-bottom: 45px;
         }
 
-        .details, .dashboard {
-            background: #1e293b;
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .tag {
+            background: #334155;
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .formula {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        .webpage-link {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        .back-link-row {
+            margin-top: 65px;
+        }
+
+        footer {
+            text-align: center;
             padding: 25px;
-            border-radius: 12px;
-            margin-top: 25px;
-            border: 1px solid #334155;
+            color: #94a3b8;
+            background: #1e293b;
         }
 
-        .dashboard iframe {
-            width: 100%;
-            height: 800px;
-            border: none;
-            border-radius: 8px;
-        }
-
-        @media (max-width: 600px) {
-            .dashboard iframe {
-                height: 600px;
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -79,76 +118,102 @@
     <h1>Complex Newton's Method Fractals</h1>
 
     <p>
-    <a href="https://github.com/nicholasboxall/complex_newtons_method_fractals"
-       target="_blank"
-       style="color: #38bdf8;">
-        View Source Code on GitHub →
-    </a>
-</p>
+        Exploring complex functions, numerical methods and fractal patterns.
+    </p>
+
+    <p>
+        <a href="https://github.com/nicholasboxall/complex_newtons_method_fractals"
+           target="_blank"
+           style="color: #38bdf8;">
+            View Source Code on GitHub →
+        </a>
+    </p>
 </header>
 
 <main>
 
-    <div class="details">
-
+    <section>
         <h2>Project Overview</h2>
 
         <p>
             The complex plane differs from the standard Cartesian plane as it contains both real and imaginary axes.
-            A large subset of functions contain at least one complex value root and using purely real mathematics, 
-            they are impossible to find. In order to proceed, this project uses the formula for imaginary numbers denoted by,
-            <div class="formula">
-                \[
-                i^2 = -1
-                \]
-            </div>
+            A large subset of functions contain at least one complex value root and using purely real mathematics,
+            they are impossible to find. In order to proceed, this project uses the formula for imaginary numbers denoted by:
         </p>
-        
+
+        <div class="formula">
+            \[
+            i^2 = -1
+            \]
+        </div>
+
         <p>
             Newton's Method is an iterative numerical method which takes a certain value and function as an input
             and attempts to estimate the roots of the function. It does so by drawing a tangent line at your starting point,
-            and outputting the point where that line intersects the y-axis. Then repeat the process as many times as you wish,
-            ideally until your next estimate doesn't differ from the last by a significant amount or tolerance. 
+            and outputting the point where that line intersects the x-axis. The process is then repeated,
+            ideally until the next estimate doesn't differ from the last by a significant amount or tolerance.
         </p>
 
         <p>
             The formula for Newton's Method:
-            <div class="formula">
-                \[
-                z_{n+1} = z_n - \frac{f(z_n)}{f'(z_n)}
-                \]
-            </div>
         </p>
+
+        <div class="formula">
+            \[
+            z_{n+1} = z_n - \frac{f(z_n)}{f'(z_n)}
+            \]
+        </div>
+
         <p>
             In this project, I have designed an application which uses Newton's Method to:
         </p>
-        
+
         <ul>
             <li>Plot the function along the real axis.</li>
             <li>Find all complex roots of the function.</li>
             <li>Plot all complex roots on the complex plane.</li>
             <li>Generate a fractal pattern showing which root each region of the complex plane converges towards.</li>
         </ul>
-        
-        <h2>Tools and Technologies</h2>
-
-        <p>
-            For this project, I used Python Code alongside the Numpy and Matplotlib packages. 
-        </p>
-
     </section>
+
+    <section>
+        <h2>Tools & Technologies</h2>
+
+        <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">HTML</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">MathJax</span>
+        </div>
+    </section>
+
+    <section>
         <h2>Webpage Link</h2>
 
-        <a href="https://nicholasboxall.github.io/complex_newtons_method_fractals/complex-function-explorer/">
-            Explore the Complex Function Visualiser
+        <p>
+            Explore the interactive application and experiment with different complex functions:
+        </p>
+
+        <a class="webpage-link"
+           href="https://nicholasboxall.github.io/complex_newtons_method_fractals/complex-function-explorer/"
+           target="_blank">
+            Explore the Complex Function Visualiser →
         </a>
-        
     </section>
 
-    <a class="back-link" href="../index.html">
-        ← Back to Portfolio
-    </a>
+    <p class="back-link-row">
+        <a class="back-link" href="../index.html">
+            ← Back to Portfolio
+        </a>
+    </p>
+
 </main>
+
+<footer>
+    <p>Data Analytics Portfolio</p>
+</footer>
 
 </body>
 </html>
